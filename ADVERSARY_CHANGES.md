@@ -87,7 +87,7 @@ Post-incident path model, safety gates, diagnostics, and BRAT status.
 - Settings UX distinguishes the configured parent folder from the actual content/source folder, and row readiness copy surfaces blockers, warnings, and ready states.
 - Stale `notion-id` protective skips now escalate when a push would skip more than `10` files or more than `25%` of the candidate set, requiring explicit operator confirmation before proceeding.
 - Adds a dedicated Diagnostics panel with per-database push/pull readiness, last sync timestamps, conflict count, and stale-ID preview.
-- Adds a BRAT/install status panel showing installed version versus the latest GitHub release for `adversarydsgn/stonerelay`, with a manual "Check for updates" refresh and no automatic updater.
+- Adds a BRAT/install status panel showing installed version versus the latest GitHub release for `adversarydesign/stonerelay`, with a manual "Check for updates" refresh and no automatic updater.
 - Database auto-sync execution remains disabled while page auto-sync remains refresh-only.
 - Adds the Bugs shared-parent regression test fixture so unrelated sibling database files under `3. System/` cannot be pushed into Bugs.
 

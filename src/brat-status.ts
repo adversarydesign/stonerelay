@@ -1,4 +1,4 @@
-export const BRAT_RELEASE_REPO = "adversarydsgn/stonerelay";
+export const BRAT_RELEASE_REPO = "adversarydesign/stonerelay";
 export const BRAT_RELEASE_URL = `https://api.github.com/repos/${BRAT_RELEASE_REPO}/releases/latest`;
 export const BRAT_STATUS_CACHE_MS = 60 * 60 * 1000;
 

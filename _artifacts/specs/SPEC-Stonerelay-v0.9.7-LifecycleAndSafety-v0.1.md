@@ -438,8 +438,8 @@ Test file naming convention: descriptive kebab-case under `tests/`. Match `obsid
 6. `git push origin main`.
 7. `git push origin v0.9.7` (single tag, NOT `--tags`).
 8. Extract release notes: `awk '/^## v0\.9\.7/,/^## v/' ADVERSARY_CHANGES.md > /tmp/stonerelay-v0.9.7-notes.md`.
-9. `gh release create v0.9.7 --repo adversarydsgn/stonerelay --title "v0.9.7 — Lifecycle Unification + Safety Symmetry + Atomic Writes" --notes-file /tmp/stonerelay-v0.9.7-notes.md main.js manifest.json styles.css` (Obsidian plugin: positional asset args at end).
-10. Verify release: `gh release view v0.9.7 --repo adversarydsgn/stonerelay`.
+9. `gh release create v0.9.7 --repo adversarydesign/stonerelay --title "v0.9.7 — Lifecycle Unification + Safety Symmetry + Atomic Writes" --notes-file /tmp/stonerelay-v0.9.7-notes.md main.js manifest.json styles.css` (Obsidian plugin: positional asset args at end).
+10. Verify release: `gh release view v0.9.7 --repo adversarydesign/stonerelay`.
 
 ---
 
@@ -474,7 +474,7 @@ Per `~/.codex/AGENTS.md` and `~/.claude/skills/codex-handoff/SKILL.md`:
 - **Repos remain private.** No public-flip in this work.
 - **awk pattern** in §9 step 8 terminates on next version heading (`^## v`), not every `^## ` heading.
 - **Single tag push.** No `git push --tags`.
-- **gh release create** includes `--repo adversarydsgn/stonerelay` and asset positional args (`main.js manifest.json styles.css`) at the end (Obsidian plugin pattern).
+- **gh release create** includes `--repo adversarydesign/stonerelay` and asset positional args (`main.js manifest.json styles.css`) at the end (Obsidian plugin pattern).
 - **Match existing repo patterns** — vitest config, esbuild build, TypeScript strictness, error-log format, settings-data shapes. Do not introduce new tooling.
 - **Reuse `src/notion-client.ts`** — do not build a second Notion client.
 - **Use current Notion API** — `client.dataSources.retrieve` / `client.dataSources.query`. Do not introduce new `client.databases.*` calls. The existing `client.databases.retrieve` calls (V30) are out of scope to remove in v0.9.7 but DO NOT add new uses.
